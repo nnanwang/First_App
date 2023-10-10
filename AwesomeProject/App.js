@@ -2,12 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import StackDemo from './components/StackDemo';
 import ImportDemo from './components/ImportDemo';
+import APIdemo from './components/APIdemo';
 
 export default function App() {
   return (
-    <View style={{flex:1}}>
+      <View style={{flex:1}}>
       <Text  style={{textAlign:'center',fontSize:40}}>Math</Text>
-      <ImportDemo />
+      <APIdemo />
    
     </View>
   );
