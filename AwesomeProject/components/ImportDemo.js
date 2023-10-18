@@ -12,9 +12,8 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!!!</Text>
       <Text> 100 squared = {sq(100)}</Text>
-        <Text> 11 cubed = {cube(11)}</Text>
-        <Text> area of circle with radius 5280 = {circle_area(5280)}</Text>
-          
+      <Text> 11 cubed = {cube(11)}</Text>
+      <Text> the area of a circle of radius 5280 = {circle_area(5280)}</Text>
       <StatusBar style="auto" />
     </View>
   );
