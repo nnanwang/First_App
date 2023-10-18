@@ -1,40 +1,35 @@
 import React,{useState} from 'react';
-import {View, Button, Text} from 'react-native';
+
+import { SafeAreaView, View, Button, Text } from 'react-native';
+import CoinCount from './CoinCount';
 
 const App = () => {
-    const [change, setChange] = useState(0)
-    const [coins, setCoins] = useState(0)
+    const [change, setChange] = useState(0);
+
+    const updateTotal = (val) => {
+        setChange(change + val);
+    }
+    
     return (
-      <View>
-            <Text style = {{fontSize: 40}}>
-                U.S. Change Counter
+        <SafeAreaView syle={{ flex: 1 }}>
+            <Text style={{ fontSize: 30, margin: 20 }}>
+                U.S Change Counter
             </Text>
-            <Text style={{ fontSize: 20 }}>
-                {change} with {coins} coins
+            <Text syle={{ fontSize: 20, margin: 20 }}>
+                total value is {change}
             </Text>
-            <View style={{flex: 1, flexDirection: 'row'}} >
-                <Button
-                    title="Pennies:"
-                    onPress={() => { setChange(change + 1), setCoins(coins + 1) }}
-                />
-                <Button
-                    title="Nickels"
-                    onPress={() => { setChange(change + 5), setCoins(coins + 1) }}
-                />
-                <Button
-                    title="Dimes"
-                    onPress={() => { setChange(change + 10), setCoins(coins + 1) }}
-                />
-                <Button
-                    title="Quarters"
-                    onPress={() => { setChange(change + 25), setCoins(coins + 1) }}
-                />
-                <Button
-                    title="Half Dollars"
-                    onPress={() => { setChange(change + 50), setCoins(coins + 1) }}
-                />
-            </View>
-      </View>
+            <View style={{ flex: 1, flexDirection: 'row', color: 'while' }}>
+                <CoinCount coinName="Penny" coinValue={1} updateTotal={updateTotal} />
+                <CoinCount coinName="Nickel" coinValue={5} updateTotal={updateTotal} />
+                <CoinCount coinName="Dime" coinValue={10} updateTotal={updateTotal} />
+                <CoinCount coinName="Quarter" coinValue={25} updateTotal={updateTotal} />
+                <CoinCount coinName="Half Dollar" coinValue={50} updateTotal={updateTotal} />
+                </View>
+
+        </SafeAreaView>
+        
+       
+
     )
   }
 
