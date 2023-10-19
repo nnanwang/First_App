@@ -15,7 +15,7 @@ const App = () => {
             <Text style={{ fontSize: 30, margin: 20 }}>
                 U.S Change Counter
             </Text>
-            <Text syle={{ fontSize: 20, margin: 20 }}>
+            <Text style={{ fontSize: 20, margin: 20 }}>
                 total value is {change}
             </Text>
             <View style={{ flex: 1, flexDirection: 'row', color: 'while' }}>
