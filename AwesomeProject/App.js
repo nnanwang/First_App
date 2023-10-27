@@ -3,13 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import StackDemo from './components/StackDemo';
 import ImportDemo from './components/ImportDemo';
 import Pomodoros from './components/Pomodoros';
+import WeatherDemo from './components/WeatherDemo';
 
 export default function App() {
   return (
     
     <View style={{flex:1}}>
       <Text  style={{textAlign:'center',fontSize:40}}>First App</Text>
-      <Pomodoros />
+      <WeatherDemo />
    
     </View>
   );
