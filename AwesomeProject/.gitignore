@@ -2,6 +2,7 @@
 
 # dependencies
 node_modules/
+open_api_key.js
 
 # Expo
 .expo/

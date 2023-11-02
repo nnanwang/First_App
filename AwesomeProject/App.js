@@ -4,13 +4,14 @@ import StackDemo from './components/StackDemo';
 import ImportDemo from './components/ImportDemo';
 import Pomodoros from './components/Pomodoros';
 import WeatherDemo from './components/WeatherDemo';
+import GPTdemo from './components/GPTdemo';
 
 export default function App() {
   return (
     
     <View style={{flex:1}}>
       <Text  style={{textAlign:'center',fontSize:40}}>First App</Text>
-      <WeatherDemo />
+      <GPTdemo />
    
     </View>
   );
