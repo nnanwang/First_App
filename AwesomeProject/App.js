@@ -8,13 +8,14 @@ import GPTdemo from './components/GPTdemo';
 import BMIdemo from './components/BMIdemo';
 import DictionaryDemo from './components/DictionaryDemo';
 import Wordle from './components/Wordle';
+import WordleNew from './components/WordleNew';
 
 export default function App() {
   return (
     
     <View style={{flex:1}}>
       <Text  style={{textAlign:'center',fontSize:40}}>First App</Text>
-      <Wordle />
+      <WordleNew />
    
     </View>
   );
