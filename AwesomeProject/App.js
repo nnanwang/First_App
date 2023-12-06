@@ -9,13 +9,16 @@ import BMIdemo from './components/BMIdemo';
 import DictionaryDemo from './components/DictionaryDemo';
 import Wordle from './components/Wordle';
 import WordleNew from './components/WordleNew';
+import Sudoku from './components/Sudoku';
+
+import AIPortrait from './components/AIPortrait';
 
 export default function App() {
   return (
     
     <View style={{flex:1}}>
       <Text  style={{textAlign:'center',fontSize:40}}>First App</Text>
-      <WordleNew />
+      <AIPortrait />
    
     </View>
   );
