@@ -1,2 +1,2 @@
 # First_App
-This is math app.
+Courses for Mobile Application Development.
